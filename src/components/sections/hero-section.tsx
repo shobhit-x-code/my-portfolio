@@ -4,6 +4,7 @@ import {
 } from "@/data/portfolio";
 import { Container } from "@/components/layout/container";
 import { ButtonLink } from "@/components/ui/button-link";
+import { ReactNode } from "react";
 
 export function HeroSection() {
   return (
@@ -96,7 +97,7 @@ export function HeroSection() {
   );
 }
 
-const iconMap: Record<string, JSX.Element> = {
+const iconMap: Record<string, ReactNode> = {
   email: (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
