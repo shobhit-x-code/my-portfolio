@@ -25,7 +25,7 @@ export function SkillsSection() {
               <h2 className="type-h2 text-white">Skills</h2>
             </div>
 
-            <div className="rounded-tl-[2.75rem] rounded-br-[2.75rem] border border-white/14 bg-bg-1/90 p-7 sm:p-8">
+            <div className="motion-card rounded-tl-[2.75rem] rounded-br-[2.75rem] border border-white/14 bg-bg-1/90 p-7 sm:p-8">
               <div className="type-code text-brand-1">&lt;section&gt;</div>
               <div className="pl-6">
                 <p className="type-article text-white/82">
@@ -36,15 +36,15 @@ export function SkillsSection() {
               </div>
               <div className="mt-4 type-code text-brand-1">&lt;/section&gt;</div>
               <div className="mt-8 grid gap-4 border-t border-white/10 pt-6 sm:grid-cols-3">
-                <div className="rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
+                <div className="motion-card rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
                   <p className="type-number text-brand-1">{skillGroups.length}</p>
                   <p className="type-para mt-2 text-white/68">Core groups</p>
                 </div>
-                <div className="rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
+                <div className="motion-card rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
                   <p className="type-number text-brand-1">{totalSkills}</p>
                   <p className="type-para mt-2 text-white/68">Technologies</p>
                 </div>
-                <div className="rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
+                <div className="motion-card rounded-[1.5rem] border border-white/10 bg-white/4 p-5">
                   <p className="type-number text-brand-1">02+</p>
                   <p className="type-para mt-2 text-white/68">Years learning</p>
                 </div>
@@ -56,7 +56,7 @@ export function SkillsSection() {
             {skillGroups.map((group) => (
               <article
                 key={group.title}
-                className="rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-7 shadow-[0_0_40px_rgba(18,247,214,0.08)] backdrop-blur-sm sm:p-8"
+                className="motion-card rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-7 shadow-[0_0_40px_rgba(18,247,214,0.08)] backdrop-blur-sm sm:p-8"
               >
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <div className="min-w-0">
@@ -76,7 +76,7 @@ export function SkillsSection() {
                   {group.items.map((item) => (
                     <div
                       key={item.name}
-                      className={`rounded-full border px-4 py-2.5 ${item.color}`}
+                      className={`motion-chip rounded-full border px-4 py-2.5 ${item.color}`}
                     >
                       <span className="type-media">{item.name}</span>
                     </div>

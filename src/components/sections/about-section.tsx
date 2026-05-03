@@ -23,7 +23,7 @@ export function AboutSection() {
               <h2 className="type-h2 text-left text-white">About me</h2>
             </div>
 
-            <div className="mt-8 max-w-4xl rounded-tl-[2.75rem] rounded-br-[2.75rem] border border-white/16 bg-bg-1/90 p-7 backdrop-blur-sm sm:p-10">
+            <div className="motion-card mt-8 max-w-4xl rounded-tl-[2.75rem] rounded-br-[2.75rem] border border-white/16 bg-bg-1/90 p-7 backdrop-blur-sm sm:p-10">
               <div className="type-code text-brand-1">&lt;p&gt;</div>
               <div className="pl-6">
                 <p className="type-article text-brand-1">{helloLine}</p>
@@ -35,7 +35,7 @@ export function AboutSection() {
             </div>
           </div>
 
-          <div className="mt-[5.5rem] overflow-hidden rounded-[2rem] border border-white/12 bg-white/5">
+          <div className="motion-image mt-[5.5rem] overflow-hidden rounded-[2rem] border border-white/12 bg-white/5">
             <Image
               src="/about-photo.png"
               alt="Developer working on a laptop"

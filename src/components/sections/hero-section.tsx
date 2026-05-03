@@ -2,25 +2,31 @@ import {
   heroProfileDetails,
   heroStats,
 } from "@/data/portfolio";
+import Image from "next/image";
 import { Container } from "@/components/layout/container";
 import { ButtonLink } from "@/components/ui/button-link";
 import { ReactNode } from "react";
 
 export function HeroSection() {
   return (
-    <section id="top" className="relative overflow-hidden bg-bg-1 py-16 sm:py-24">
+    <section id="top" className="hero-ambient relative overflow-hidden bg-bg-1 py-16 sm:py-24">
       <Container>
-        <p className="type-bg text-center text-brand-2">Developer</p>
+        <p className="type-bg animate-soft-rise text-center text-brand-2">Developer</p>
 
         <div className="mt-8 grid items-start gap-8 xl:grid-cols-[380px_minmax(0,1fr)_240px]">
           <div>
-            <div className="relative pl-[3px] pt-[3px]">
+            <div className="motion-float relative pl-[3px] pt-[3px]">
               <div className="pointer-events-none absolute left-0 top-0 h-full w-full rounded-tl-[3.75rem] rounded-br-[3.75rem] border-l-[3px] border-t-[3px] border-brand-1" />
               <div className="rounded-tl-[3.75rem] rounded-br-[3.75rem] border-[3px] border-white bg-bg-1 px-6 py-8 sm:px-8">
-                <div className="mx-auto flex h-44 w-44 items-center justify-center overflow-hidden rounded-full border border-brand-1/40 bg-bg-2 text-center">
-                  <span className="type-label-medium px-6 uppercase tracking-[0.2em] text-brand-2">
-                    Profile Image
-                  </span>
+                <div className="mx-auto h-44 w-44 overflow-hidden rounded-full border border-brand-1/40 bg-bg-2">
+                  <Image
+                    src="/profile-photo.jpg"
+                    alt="Shobhit Nair"
+                    width={176}
+                    height={176}
+                    priority
+                    className="h-full w-full object-cover"
+                  />
                 </div>
 
                 <div className="mt-6 text-center">
@@ -51,7 +57,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="pt-4 xl:pt-14">
+          <div className="animate-soft-rise pt-4 xl:pt-14 [animation-delay:140ms]">
             <div className="type-code text-brand-1">&lt;h1&gt;</div>
             <h1 className="type-h1 max-w-3xl pl-6 text-white">
               Hey
@@ -78,7 +84,7 @@ export function HeroSection() {
             </a>
           </div>
 
-          <div className="rounded-[2rem] bg-bg-2 p-6 sm:p-8 xl:mt-12">
+          <div className="motion-card rounded-[2rem] bg-bg-2 p-6 sm:p-8 xl:mt-12">
             <div className="space-y-8">
               {heroStats.map((item) => (
                 <div

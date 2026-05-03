@@ -17,9 +17,9 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <article
               key={project.title}
-              className="group overflow-hidden rounded-[2rem] border border-white/8 bg-bg-1"
+              className="motion-card group overflow-hidden rounded-[2rem] border border-white/8 bg-bg-1"
             >
-              <div className="h-56 bg-[linear-gradient(135deg,rgba(18,247,214,0.2),rgba(255,255,255,0.02))] p-8">
+              <div className="motion-sheen h-56 bg-[linear-gradient(135deg,rgba(18,247,214,0.2),rgba(255,255,255,0.02))] p-8">
                 <p className="type-code text-brand-2">0{index + 1}</p>
               </div>
               <div className="p-8">
@@ -35,7 +35,7 @@ export function ProjectsSection() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="type-label-light rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white/75"
+                      className="motion-chip type-label-light rounded-full border border-white/10 bg-white/5 px-4 py-2 text-white/75"
                     >
                       {tag}
                     </span>

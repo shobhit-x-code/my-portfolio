@@ -1,4 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) portfolio project.
+
+## Strapi Integration
+
+The portfolio can load blog content from Strapi and store contact form submissions there.
+
+Create a `.env.local` file in `portfolio` with:
+
+```bash
+STRAPI_URL=http://localhost:1337
+STRAPI_API_TOKEN=your-strapi-api-token
+STRAPI_BLOG_COLLECTION=blogs
+STRAPI_CONTACT_COLLECTION=contacts
+```
+
+Expected Strapi setup:
+
+- `blogs` collection type with fields like `title`, `slug`, `excerpt` or `summary`, optional `content` or `body`, optional `readTime`, optional `tags`, and optional `coverImage` or `image`
+- `contacts` collection type with fields `name`, `email`, and `message`
+
+Behavior:
+
+- Blogs are fetched server-side from Strapi and fall back to local sample content if Strapi is unavailable.
+- Contact form submissions post to the local Next.js route at `/api/contact`, which forwards data to Strapi.
+- Blog detail pages render at `/blogs/[slug]`.
 
 ## Getting Started
 

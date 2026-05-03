@@ -1,7 +1,19 @@
+export type BlogPost = {
+  slug?: string;
+  title: string;
+  excerpt: string;
+  content?: string;
+  meta: string;
+  tags: string[];
+  href: string;
+  image: string;
+};
+
 export const navigationLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
+  { href: "#blogs", label: "Blogs" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -88,5 +100,32 @@ export const projects = [
     tags: ["Next.js", "NestJS", "Postgres", "Docker", "Prisma"],
     liveUrl: "https://www.wizlo.com/",
     role: "Built with Next.js on the frontend and contributed to the app stack across web and backend features.",
+  },
+];
+
+export const blogPosts: BlogPost[] = [
+  {
+    slug: "what-does-it-take-to-become-a-web-developer",
+    title: "What does it take to become a web developer?",
+    excerpt:
+      "A quick breakdown of the core areas behind modern web development, from frontend craft to backend architecture and delivery workflows.",
+    content:
+      "Web development is much more than writing HTML and styling pages. It usually combines frontend development, backend systems, deployment workflows, and design thinking. Frontend work focuses on the parts users see and interact with, including layouts, accessibility, responsiveness, and interaction details. Backend development handles data, APIs, authentication, and the business logic that powers the product. Modern web projects also rely heavily on DevOps practices like version control, testing, deployment pipelines, and monitoring. On top of that, strong design awareness helps developers create interfaces that are not only functional but also intuitive and polished. Becoming a web developer means building skills across these areas over time, learning how they connect, and practicing by shipping real projects that solve real problems.",
+    meta: "10.Oct 2023 / 1 Min",
+    tags: ["Web Developer", "Web Developer Job", "Web Development"],
+    href: "/blogs/what-does-it-take-to-become-a-web-developer",
+    image: "/about-photo.png",
+  },
+  {
+    slug: "how-i-approach-shipping-product-ready-interfaces",
+    title: "How I approach shipping product-ready interfaces",
+    excerpt:
+      "Notes on building interfaces that feel polished, stay maintainable, and balance speed with thoughtful UX decisions.",
+    content:
+      "Product-ready interfaces come from a mix of structure, restraint, and care for the small states users actually encounter. I like to start with the core workflow, shape the layout around scanning and action, then refine the details: spacing, responsive behavior, loading states, errors, and copy. The result should feel calm to use and straightforward to maintain, so the interface can keep improving without becoming fragile.",
+    meta: "14.Nov 2023 / 2 Min",
+    tags: ["UI Engineering", "Frontend", "Product Design"],
+    href: "/blogs/how-i-approach-shipping-product-ready-interfaces",
+    image: "/about-bg.png",
   },
 ];

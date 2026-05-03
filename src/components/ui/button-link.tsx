@@ -25,7 +25,7 @@ export function ButtonLink({
     <a
       href={href}
       className={cn(
-        "type-button inline-flex items-center justify-center rounded-full px-8 py-4 transition duration-200",
+        "type-button motion-button inline-flex items-center justify-center rounded-full px-8 py-4 transition duration-200",
         variantClasses[variant],
       )}
       target={external ? "_blank" : undefined}
