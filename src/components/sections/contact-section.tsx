@@ -54,7 +54,7 @@ export function ContactSection() {
         <SectionHeading
           eyebrow="Contact"
           title="Send me a message."
-          description="Your contact details will be stored in Strapi so you can manage inbound messages from the CMS."
+          description="Have a project, role, or collaboration in mind? Share a few details and I will get back to you soon."
         />
 
         <div className="mx-auto mt-14 flex max-w-4xl flex-col items-center px-6 text-center sm:px-8">

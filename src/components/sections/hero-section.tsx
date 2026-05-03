@@ -49,8 +49,21 @@ export function HeroSection() {
                 </div>
 
                 <div className="mt-8">
-                  <ButtonLink href="/cv.pdf" variant="brand">
-                    Download CV
+                  <ButtonLink
+                    href="/Shobhit_Nair_Full_Stack.pdf"
+                    variant="white"
+                    download="Shobhit_Nair_Full_Stack.pdf"
+                  >
+                    <span>Download CV</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <path
+                        d="M10 3.75V12.25M10 12.25L6.25 8.5M10 12.25L13.75 8.5M4.5 15.75H15.5"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </ButtonLink>
                 </div>
               </div>
@@ -70,8 +83,10 @@ export function HeroSection() {
 
             <div className="mt-8 type-code text-brand-1">&lt;p&gt;</div>
             <p className="type-article max-w-2xl pl-6 text-white/72">
-              I help business grow by crafting amazing web experiences. If
-              you&apos;re looking for a developer that likes to get stuff done,
+              I build full-stack web products with clean interfaces, reliable
+              APIs, and practical CMS workflows. I enjoy turning ideas into
+              responsive, production-ready experiences that are easy to use and
+              maintain.
             </p>
             <div className="type-code text-brand-1">&lt;/p&gt;</div>
 

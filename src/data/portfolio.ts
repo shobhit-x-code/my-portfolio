@@ -37,10 +37,10 @@ export const socialLinks = [
 ];
 
 export const aboutMeDescription = `Hello!
-My name is Sinan and I specialize in web developement that utilizes HTML, CSS, JS, and REACT etc.
-I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving.
-When I'm not coding, I am writing bolgs, reading, or picking up some new hands-on art project like photography.
-I like to have my perspective and belief systems challenged so that I see the world through new eyes.`;
+My name is Shobhit Nair, and I specialize in full-stack web development with React, Next.js, Node.js, NestJS, and CMS platforms like Strapi.
+I enjoy building clean, responsive interfaces backed by reliable APIs and practical backend systems. My focus is on writing maintainable code, improving user experience, and shipping features that solve real business problems.
+I have worked on client projects across frontend tools, product websites, dashboards, authentication flows, API integrations, and content-managed applications.
+When I am not coding, I keep learning new tools, refining my development workflow, and exploring ideas that help me build better digital products.`;
 
 export const skillGroups = [
   {
